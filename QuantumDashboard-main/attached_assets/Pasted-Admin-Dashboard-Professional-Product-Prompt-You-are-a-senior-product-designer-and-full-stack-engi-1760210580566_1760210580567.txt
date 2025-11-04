@@ -1,0 +1,102 @@
+Admin Dashboard – Professional Product Prompt
+
+You are a senior product designer and full-stack engineer. Design and implement a modern, responsive Admin Dashboard for our project. The dashboard must let admins manage landing-page pricing and content, users (including premium vs. standard), news items on the dashboard, and each user’s job submissions, teamwork projects, and game scores. It should follow best-in-class UX patterns (e.g., Stripe, Linear, Notion) and look polished and “advanced”.
+
+Objectives
+
+Make daily admin tasks fast, safe, and auditable.
+
+Provide at-a-glance insights with rich visualizations.
+
+Support content/pricing edits that instantly reflect on the public landing page and docs.
+
+Primary Features
+1) Pricing Management (Landing Page)
+
+View and edit all active plans: name, monthly/yearly price, features, limits, trial, status.
+
+Versioning & draft → review → publish flow; show change history and rollback.
+
+Optional A/B test flag per plan (target % + start/end date).
+
+Preview panel showing how the pricing table will render on the site.
+
+2) Landing Page & Docs Content
+
+WYSIWYG/Markdown editor with sections (hero, features, FAQs, footers, docs pages).
+
+Per-section versioning, diff view, scheduled publish, and revert.
+
+Link checker and “SEO hints” (title length, meta desc, headings).
+
+Media library (images/icons) with alt-text and usage references.
+
+3) User Management
+
+Top summary cards: Total Users, Premium, Standard, 7-day signups, Churn.
+
+Filterable/sortable user table (search by email/ID, plan, status, signup date, activity).
+
+User detail view:
+
+Profile & subscription info (plan, renewal, payment status).
+
+Activity: jobs submitted (count & recent list), teamwork projects (membership, role), game score history (chart), last login/IP.
+
+Admin actions: edit profile fields, reset password link, change plan, suspend/reactivate.
+
+Notes & internal tags.
+
+Bulk actions (email, plan changes, export CSV).
+
+4) News Management (Dashboard Announcements)
+
+Create/edit/publish news items that show on the admin dashboard (title, body, tags, visibility, pin to top, expiry).
+
+Schedule posts; archive; view analytics (impressions/clicks).
+
+5) Game Score Tracking
+
+Per-user line chart of scores over time; best score, streaks, percentile.
+
+Leaderboard with filters (time window, cohort, plan).
+
+Flag anomalies (sudden spikes/drops) with alert badges.
+
+6) Analytics & Visualization
+
+Home overview with cards + charts:
+
+Users by plan (donut), signups vs. churn (area), jobs submitted (bar), active teamwork projects (count), average game score (trend).
+
+Cohort analysis (signup month × retention).
+
+Export PNG/CSV from any chart.
+
+7) Governance & Safety
+
+Role-based access control (Super Admin, Content Admin, Support).
+
+Audit log for all mutations (who/what/when/before/after, IP).
+
+Draft/review/publish workflow and required approvals for pricing/content.
+
+Nice-to-Have/“Delight” Ideas
+
+What-if simulator: tweak plan price and see projected MRR impact.
+
+Content health: stale sections warning (no update in >90 days).
+
+Feature flags: toggle specific homepage blocks by audience/plan.
+
+User 360 timeline: unified event stream (signups, jobs, scores, plan changes).
+
+UX & UI Requirements
+
+Clean, high-contrast layout; dark/light modes; keyboard navigation; WCAG AA.
+
+Global search (⌘K / Ctrl-K) across users, plans, docs, news.
+
+Consistent empty states, loading skeletons, toasts, and confirmation modals.
+
+Use cards, tabs, data grids, and a right-side details drawer for quick edits.

@@ -1,0 +1,76 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+chunk-2IYXMHXU.js?v=024ab426:18167 The above error occurred in the <ambientLight> component:
+
+    at ambientLight
+    at Suspense
+    at ErrorBoundary (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2IYXMHXU.js?v=024ab426:16490:5)
+    at FiberProvider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2IYXMHXU.js?v=024ab426:18170:21)
+    at Provider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2IYXMHXU.js?v=024ab426:17779:3)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+console.error @ chunk-2IYXMHXU.js?v=024ab426:18167Understand this error
+chunk-2IYXMHXU.js?v=024ab426:18167 The above error occurred in the <primitive> component:
+
+    at primitive
+    at https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@react-three_drei.js?v=024ab426:100914:30
+    at points
+    at https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@react-three_drei.js?v=024ab426:105598:3
+    at https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@react-three_drei.js?v=024ab426:105636:13
+    at ParticleCloud (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/src/components/quantum/QuantumParticles.tsx?t=1760030660385:24:21)
+    at Suspense
+    at ErrorBoundary (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2IYXMHXU.js?v=024ab426:16490:5)
+    at FiberProvider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2IYXMHXU.js?v=024ab426:18170:21)
+    at Provider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2IYXMHXU.js?v=024ab426:17779:3)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+console.error @ chunk-2IYXMHXU.js?v=024ab426:18167Understand this error
+2chunk-2IYXMHXU.js?v=024ab426:18276 Uncaught TypeError: Cannot read properties of undefined (reading 'replit')
+    at chunk-2IYXMHXU.js?v=024ab426:16714:50
+    at Array.reduce (<anonymous>)
+    at applyProps$1 (chunk-2IYXMHXU.js?v=024ab426:16714:25)
+    at createInstance (chunk-2IYXMHXU.js?v=024ab426:16222:28)
+    at completeWork (chunk-2IYXMHXU.js?v=024ab426:8414:34)
+    at completeUnitOfWork (chunk-2IYXMHXU.js?v=024ab426:13690:24)
+    at performUnitOfWork (chunk-2IYXMHXU.js?v=024ab426:13672:13)
+    at workLoopSync (chunk-2IYXMHXU.js?v=024ab426:13604:13)
+    at renderRootSync (chunk-2IYXMHXU.js?v=024ab426:13583:15)
+    at recoverFromConcurrentError (chunk-2IYXMHXU.js?v=024ab426:13173:28)Understand this error
+chunk-2IYXMHXU.js?v=024ab426:18167 The above error occurred in the <ForwardRef(Canvas)> component:
+
+    at Canvas (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2IYXMHXU.js?v=024ab426:18236:3)
+    at FiberProvider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2IYXMHXU.js?v=024ab426:18170:21)
+    at CanvasWrapper
+    at div
+    at QuantumParticles
+    at section
+    at div
+    at main
+    at div
+    at div
+    at div
+    at Docs (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/src/pages/Docs.tsx?t=1760030603001:36:20)
+    at RenderedRoute (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/react-router-dom.js?v=024ab426:5594:26)
+    at Routes (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/react-router-dom.js?v=024ab426:6357:3)
+    at Router (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/react-router-dom.js?v=024ab426:6300:13)
+    at BrowserRouter (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/react-router-dom.js?v=024ab426:9401:3)
+    at Provider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=024ab426:38:15)
+    at TooltipProvider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=024ab426:64:5)
+    at ThemeProvider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/src/components/ui/theme-provider.tsx:21:3)
+    at QueryClientProvider (https://573e72a5-64ed-49b4-8b2d-c7fc99746319-00-1eh9xyoi7fjl5.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=024ab426:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+console.error @ chunk-2IYXMHXU.js?v=024ab426:18167Understand this error
+chunk-RPCDYKBN.js?v=024ab426:19413 Uncaught TypeError: Cannot read properties of undefined (reading 'replit')
+    at chunk-2IYXMHXU.js?v=024ab426:16714:50
+    at Array.reduce (<anonymous>)
+    at applyProps$1 (chunk-2IYXMHXU.js?v=024ab426:16714:25)
+    at createInstance (chunk-2IYXMHXU.js?v=024ab426:16222:28)
+    at completeWork (chunk-2IYXMHXU.js?v=024ab426:8414:34)
+    at completeUnitOfWork (chunk-2IYXMHXU.js?v=024ab426:13690:24)
+    at performUnitOfWork (chunk-2IYXMHXU.js?v=024ab426:13672:13)
+    at workLoopSync (chunk-2IYXMHXU.js?v=024ab426:13604:13)
+    at renderRootSync (chunk-2IYXMHXU.js?v=024ab426:13583:15)
+    at recoverFromConcurrentError (chunk-2IYXMHXU.js?v=024ab426:13173:28)Understand this error
+3chunk-XV5HZV74.js?v=024ab426:40643 THREE.WebGLRenderer: Context Lost.

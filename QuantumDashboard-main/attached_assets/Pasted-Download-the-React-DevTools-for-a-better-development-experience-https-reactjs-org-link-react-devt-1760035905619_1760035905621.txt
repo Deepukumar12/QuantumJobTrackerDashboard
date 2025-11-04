@@ -1,0 +1,39 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+2chunk-RPCDYKBN.js?v=a158f18c:11595 Uncaught Error: Rendered fewer hooks than expected. This may be caused by an accidental early return statement.
+    at renderWithHooks (chunk-RPCDYKBN.js?v=a158f18c:11595:19)
+    at updateFunctionComponent (chunk-RPCDYKBN.js?v=a158f18c:14582:28)
+    at beginWork (chunk-RPCDYKBN.js?v=a158f18c:15924:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=a158f18c:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=a158f18c:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=a158f18c:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=a158f18c:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=a158f18c:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=a158f18c:19137:13)
+    at renderRootSync (chunk-RPCDYKBN.js?v=a158f18c:19116:15)Understand this error
+chunk-RPCDYKBN.js?v=a158f18c:14032 The above error occurred in the <Docs> component:
+
+    at Docs (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/src/pages/Docs.tsx:154:20)
+    at RenderedRoute (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/react-router-dom.js?v=65b59515:5594:26)
+    at Routes (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/react-router-dom.js?v=65b59515:6357:3)
+    at Router (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/react-router-dom.js?v=65b59515:6300:13)
+    at BrowserRouter (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/react-router-dom.js?v=65b59515:9401:3)
+    at Provider (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=a158f18c:38:15)
+    at TooltipProvider (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=069d271d:64:5)
+    at ThemeProvider (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/src/components/ui/theme-provider.tsx:21:3)
+    at QueryClientProvider (https://17debe3c-6fec-4b5e-96e5-99a476bf6931-00-32blzzq9e80t.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=24b7f1ba:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-RPCDYKBN.js?v=a158f18c:14032Understand this error
+chunk-RPCDYKBN.js?v=a158f18c:9129 Uncaught Error: Rendered fewer hooks than expected. This may be caused by an accidental early return statement.
+    at renderWithHooks (chunk-RPCDYKBN.js?v=a158f18c:11595:19)
+    at updateFunctionComponent (chunk-RPCDYKBN.js?v=a158f18c:14582:28)
+    at beginWork (chunk-RPCDYKBN.js?v=a158f18c:15924:22)
+    at beginWork$1 (chunk-RPCDYKBN.js?v=a158f18c:19753:22)
+    at performUnitOfWork (chunk-RPCDYKBN.js?v=a158f18c:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js?v=a158f18c:19137:13)
+    at renderRootSync (chunk-RPCDYKBN.js?v=a158f18c:19116:15)
+    at recoverFromConcurrentError (chunk-RPCDYKBN.js?v=a158f18c:18736:28)
+    at performSyncWorkOnRoot (chunk-RPCDYKBN.js?v=a158f18c:18879:28)
+    at flushSyncCallbacks (chunk-RPCDYKBN.js?v=a158f18c:9119:30)Understand this error
