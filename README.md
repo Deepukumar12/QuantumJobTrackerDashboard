@@ -142,3 +142,38 @@ Preferred communication style: Simple, everyday language.
 - **Axios**: HTTP client for external API communications
 
 The application follows a monorepo structure with shared types and schemas, enabling type-safe communication between frontend and backend. The architecture supports both development simulation and production quantum computing integration.
+
+# Enterprise Project Structure
+
+This project adopts a clean, enterprise-grade architecture with a highly modular directory layout. Below is an overview of the directory responsibilities:
+
+- **`app/`**: Application entry points and initialization.
+  - `express-app.ts`: Express application setup and middleware registration.
+  - `server.ts`: Starts the HTTP server.
+  - `App.tsx` & `main.tsx`: React application entry and routing.
+- **`assets/`**: Media assets, styles, and other static elements.
+- **`components/`**: Modular, reusable UI components (divided by feature e.g., `admin`, `dashboard`, `ui`, `quiz`).
+- **`config/`**: Configuration files (e.g., application config, database config, Vite setup).
+- **`constants/`**: Immutable constants, quiz data, and static config sets.
+- **`contexts/`**: React context files for global state management.
+- **`controllers/`**: HTTP controllers containing routing handler logic.
+- **`docs/`**: Documentation pages and assets.
+- **`helpers/`**: Small helper functions (e.g., UI helpers, exports).
+- **`hooks/`**: Custom React hooks.
+- **`layouts/`**: Layout containers for views.
+- **`logs/`**: Filesystem logs for monitoring API traffic.
+- **`middlewares/`**: Express HTTP middleware (e.g., auth checks, errors, logging).
+- **`models/`**: Additional database-related interfaces and structures.
+- **`monitoring/`**: Server performance and health monitoring metrics.
+- **`pages/`**: Primary page components.
+- **`providers/`**: Global application context/query providers.
+- **`public/`**: Publicly accessible assets.
+- **`repositories/`**: Data access layers mapping DB schemas to service actions.
+- **`routes/`**: Route index and controller registration mapping.
+- **`schemas/`**: Shared database and client schema definitions.
+- **`scripts/`**: Development and database management utility scripts.
+- **`services/`**: Core business logic (analytics, gamification, collaboration).
+- **`shared/`**: Utilities and structures shared between frontend and backend.
+- **`tests/`**: Automated unit and integration tests.
+- **`types/`**: Global TypeScript types and interface definitions.
+- **`utils/`**: Utility instances (like `queryClient`).

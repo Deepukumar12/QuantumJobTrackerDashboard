@@ -1,5 +1,5 @@
 {
-  "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": [
     "node_modules",
     "build",
@@ -31,12 +31,16 @@
     "baseUrl": ".",
     "types": ["node", "vite/client"],
     "paths": {
-      "@/*": ["./client/src/*"],
-      "@shared/*": ["./shared/*"]
+      "@/lib/utils": ["./frontend/src/lib/ui.helper.ts"],
+      "@/lib/queryClient": ["./frontend/src/utils/query-client.ts"],
+      "@/lib/export": ["./frontend/src/lib/export.helper.ts"],
+      "@/lib/job-simulator": ["./frontend/src/lib/job-simulator.helper.ts"],
+      "@/data/quizData": ["./shared/constants/quiz-data.constants.ts"],
+      "@/*": ["./frontend/src/*"],
+      "@shared/schema": ["./shared/schemas/schema.ts"],
+      "@shared/*": ["./shared/*"],
+      "@server/*": ["./backend/src/*"],
+      "@admin/*": ["./admin/*"]
     }
-
-    /* Keep this ONLY if you truly import .ts/.tsx with extensions in source code
-       (most Vite projects don't). Otherwise remove it. */
-    // "allowImportingTsExtensions": true
   }
 }

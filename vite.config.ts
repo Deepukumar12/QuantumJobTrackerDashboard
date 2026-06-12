@@ -18,12 +18,19 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
+      "@/lib/utils": path.resolve(import.meta.dirname, "frontend/src/lib/ui.helper.ts"),
+      "@/lib/queryClient": path.resolve(import.meta.dirname, "frontend/src/utils/query-client.ts"),
+      "@/lib/export": path.resolve(import.meta.dirname, "frontend/src/lib/export.helper.ts"),
+      "@/lib/job-simulator": path.resolve(import.meta.dirname, "frontend/src/lib/job-simulator.helper.ts"),
+      "@/data/quizData": path.resolve(import.meta.dirname, "shared/constants/quiz-data.constants.ts"),
+      "@": path.resolve(import.meta.dirname, "frontend/src"),
+      "@shared/schema": path.resolve(import.meta.dirname, "shared/schemas/schema.ts"),
       "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      "@assets": path.resolve(import.meta.dirname, "frontend/src/assets"),
+      "@admin": path.resolve(import.meta.dirname, "admin"),
     },
   },
-  root: path.resolve(import.meta.dirname, "client"),
+  root: path.resolve(import.meta.dirname, "frontend"),
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
