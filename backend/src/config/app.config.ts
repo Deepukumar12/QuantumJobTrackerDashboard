@@ -1,8 +1,11 @@
 import { config } from "dotenv";
 import path from "path";
 
-// Load environment variables from the root .env file dynamically
-config({ path: path.resolve(import.meta.dirname, "../../../.env") });
+// In production (Railway/cloud), env vars are injected directly into process.env.
+// Only attempt to load .env file in development to avoid errors on missing file.
+if (process.env.NODE_ENV !== "production") {
+  config({ path: path.resolve(import.meta.dirname, "../../../.env") });
+}
 
 export const appConfig = {
   port: parseInt(process.env.PORT || "5000", 10),
